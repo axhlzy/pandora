@@ -179,6 +179,8 @@ def main():
     args, _ = parser.parse_known_args()
     __show_verbose = args.verbose
 
+    args.server = 'server'
+
     Console.debug_b(''', Mode: {}, Engine: {}
         '''.format('server' if args.server else 'cli', 'turbo' if args.api else 'free'))
 
