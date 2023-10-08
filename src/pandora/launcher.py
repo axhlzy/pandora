@@ -48,7 +48,7 @@ def save_access_token(access_token):
         print()
 
 
-def confirm_access_token(token_file=None, silence=False, api=False):
+def confirm_access_token(token_file=None, silence=True, api=False):
     app_token_file = os.path.join(USER_CONFIG_DIR, 'access_token.dat')
 
     app_token_file_exists = os.path.isfile(app_token_file)
