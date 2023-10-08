@@ -67,8 +67,7 @@ def confirm_access_token(token_file=None, silence=True, api=False):
         return access_token, True
 
     if app_token_file_exists:
-        confirm = 'y' if silence else Prompt.ask('A saved access token has been detected. Do you want to use it?',
-                                                 choices=['y', 'n', 'del'], default='y')
+        confirm = 'y'
         if 'y' == confirm:
             access_token = read_access_token(app_token_file)
             if not check_access_token_out(access_token, api):
