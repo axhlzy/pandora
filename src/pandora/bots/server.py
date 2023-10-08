@@ -18,7 +18,7 @@ from ..openai.api import API
 
 class ChatBot:
     __default_ip = '127.0.0.1'
-    __default_port = 8008
+    __default_port = 80
 
     def __init__(self, chatgpt, debug=False, sentry=False):
         self.chatgpt = chatgpt
